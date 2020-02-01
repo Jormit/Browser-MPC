@@ -37,3 +37,7 @@ button:hover {
 	border-color: #31E981 !important;
 	transition: all 0.4s ease 0s;
 }
+
+br {
+	height:15px;
+}

@@ -16,8 +16,10 @@
 <body>
 	<div class = "fileDialog">	
 		<h1>Browser MPC</h1>
+		<span id = "currentKey"> Selected Key:</span><br>
 		<button onClick='if (currentKey) {$("#loadSound").click();} else {alert("Please select key by pressing it!");}'>Load sound</button>
-		<span id = "currentKey"> Selected Key: </span>
+		
+		Volume: <input id="volume" type="number" name="volume" min="1" max="10" value="10" onchange="setVolume();"> 
 		
 		
 		<input id = "loadSound" type="file" style = "display: none">

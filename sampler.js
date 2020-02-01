@@ -65,3 +65,6 @@ $(document).keyup(function(e){
 	}
 });
 
+function setVolume(){
+	sounds[currentKey].volume(parseFloat(document.getElementById("volume").value) / 10.0);
+}
